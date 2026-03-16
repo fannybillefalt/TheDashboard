@@ -1,11 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Dashboard</title>
 </head>
 <body>
-    
+    <header class="timestamp"><time datetime=""></time></header>
+    <main>
+        <section class="mainheading">
+            <h1 id="mainheading" contenteditable="true">Fannys Dashboard</h1>
+        </section>
+
+        <section class="cards">
+            <article class="card">
+                <h4 class="card-heading">Snabblänkar</h4>
+                <a href="">Google</a>
+                <a href="">Notion</a>
+                <a href="">Google </a>
+                <a href="">Chat GPT </a>
+                <button id="addlink">Lägg till länk</button>
+            </article>
+            <article class="card">
+                <h4 class="card-heading" >Dagens väder</h4>
+                <div id="dailyweather"></div>
+            </article>
+            <article class="card">
+                <h4 class="card-heading">Nyheter</h4>
+                <div id="news"></div>
+            </article>
+            <article class="card">
+                <h4 class="card-heading">Anteckningar</h4>
+                <textarea name="notes"></textarea>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <button id="randombackground">Slumpa ny bakgrund</button>
+    </footer>
 </body>
 </html>
