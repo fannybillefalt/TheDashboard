@@ -10,11 +10,13 @@
   width: max-content;
   align-items: center;
   padding: 0rem 2rem;
+  margin-top: 1rem;
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+  font-family: "Golos Text", sans-serif;
 }
 
 body {
@@ -23,21 +25,27 @@ body {
   align-items: center;
   background-color: rgba(251, 251, 251);
   height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .mainheading h1 {
-  font-family: "golos-text", sans-serif;
+  font-family: "Golos Text", sans-serif;
   text-align: center;
+  margin-top: 5rem;
 }
 
 .cards {
   display: flex;
   justify-content: center;
-  /* flex-wrap: wrap; */
-  margin-top: 100px;
+  flex-wrap: wrap;
 }
+
 .card-heading {
-  font-family: "rubik", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
   text-align: center;
 }
 
@@ -46,17 +54,19 @@ body {
   flex-direction: column;
   background-color: rgba(226, 226, 226);
   flex: 1;
-  min-width: 200px;
+  min-width: 280px;
   min-height: auto;
-  /* max-width: 325px; */
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  max-width: 350px;
+  max-height: 400px;
+  overflow-y: auto; 
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
   overflow: hidden;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  margin: 20px;
+  margin: 7px;
   padding: 1rem;
 }
 
@@ -70,16 +80,147 @@ body {
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+  font-family: "Golos Text", sans-serif;
+  font-weight: bold;
 }
 
-.link-text {
-  list-style-type: none;
+.favicon {
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
 }
 
-.btn {
+.delete-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1rem;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.addLink-btn {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  background-color: rgba(177, 177, 177);
+  border: none;
+  width: fit-content;
+  margin: 0.5rem auto;
+  padding: 0.2rem 0.3rem;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+  font-family: "Golos Text", sans-serif;
+}
+
+.addLink-btn img {
+    width: 16px;
+    height: 16px;
+}
+
+.contentCard {
+    background-color: white;
+    border-radius: 8px;
+    padding: 0.8rem;
+    margin: 0.5rem;
+    font-family: "Golos Text", sans-serif;
+}
+
+.contentCard a{
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.weatherDay {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255);
+  padding: 0.8rem;
+  margin: 0.5rem;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.weatherIcon {
+  width: 40px;
+  height: 40px;
+}
+.weatherInfo {
+    display: flex;
+    flex-direction: column;
+    font-family: "Golos Text", sans-serif;
+}
+
+.tempWrapper {
+    display: flex;
+    gap: 5px;
+}
+.dayName{
+  font-weight: bold;
+}
+.temp {
+    background-color: rgba(226, 226, 226);
+    border-radius: 8px;
+    padding: 0.2rem;
+    margin-top: 0.2rem;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+textarea {
+  flex: 1;
+  resize: none;
+  border: none;
+  border-radius: 8px;
+    padding: 0.2rem;
+    margin-top: 0.2rem;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+footer{
+  margin-top: 5rem;
+}
+
+.randombtn {
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  background-color: rgb(199, 199, 199);
+  font-weight: bold;
+  color: white;
+  width: fit-content;
+  /* margin: 0.8rem 1rem; */
+  padding: 0.6rem 0.4rem;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.randombtn img {
+    width: 20px;
+    height: 20px;
 }

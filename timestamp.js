@@ -1,4 +1,3 @@
-
 function showTimeAndDate() {
   const timestamp = new Date();
   const time = timestamp.toLocaleString("sv-SE", {
@@ -10,9 +9,6 @@ function showTimeAndDate() {
     month: "long",
     year: "numeric",
   });
-  document.getElementById("timestamp").innerHTML = time + " " + date;
+  document.getElementById("timestamp").innerHTML = time + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + date;
 }
 setInterval(showTimeAndDate, 1000);
-
-console.log(showTimeAndDate);
-
