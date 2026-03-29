@@ -6,13 +6,17 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.google.com/specimen/Golos+Text"
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap"
       rel="stylesheet"
     />
-    <script src="./script.js" defer></script>
+    <script src="./weatherAPI.js" defer></script>
+    <script src="./timestamp.js" defer></script>
+    <script src="./unsplashAPI.js" defer></script>
+    <script src="./dashboard.js" defer></script>
+    <script src="./quizAPI.js" defer></script>
 
     <title>The Dashboard</title>
   </head>
@@ -26,19 +30,17 @@
       <section class="cards">
         <article class="card">
           <h4 class="card-heading">Snabblänkar</h4>
-          <a href="">Google</a>
-          <a href="">Notion</a>
-          <a href="">Google </a>
-          <a href="">Chat GPT </a>
-          <button class="btn" id="addlink">Lägg till länk</button>
+          <div id="links"></div>
+          <button class="addLink-btn" id="addlink"><img src="./pictures/add-button.png">Lägg till länk</button>
         </article>
         <article class="card">
           <h4 class="card-heading">Dagens väder</h4>
-          <div id="dailyweather"></div>
+          <div class="dailyweather" id="dailyweather">
+          </div>
         </article>
         <article class="card">
-          <h4 class="card-heading">Nyheter</h4>
-          <div id="news"></div>
+          <h4 class="card-heading">Quiz</h4>
+          <div id="quiz"></div>
         </article>
         <article class="card">
           <h4 class="card-heading">Anteckningar</h4>
@@ -47,7 +49,8 @@
       </section>
     </main>
     <footer>
-      <button id="randombackground">Slumpa ny bakgrund</button>
+      <button class="randombtn" id="randombackground">
+      <img src="./pictures/refresh.png">Slumpa ny bakgrund</button>
     </footer>
   </body>
 </html>
